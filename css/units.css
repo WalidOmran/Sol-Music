@@ -1,0 +1,17 @@
+.text-capitalize { text-transform: capitalize;}
+.text-uppercase { text-transform: uppercase;}
+.text-center { text-align: center;}
+.dark-main-color { color: var(--dark-main-color);}
+.bg-dark-main-color { background: var(--dark-main-color);}
+.bg-main-color { background: var(--main-color);}
+.main-color { color: var(--main-color);}
+.white-color { color: var(--white-color) !important;}
+.dark-gray { color: var(--dark-gray); }
+.dim-gray { color: var(--dim-gray); }
+.w-100 { width: 100%;}
+.max-w-100 { max-width: 100%;}
+.pd-y {padding: 50px 0;}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) { 
+    .pd-y {padding: 25px 0;}
+}

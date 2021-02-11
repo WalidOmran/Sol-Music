@@ -1,0 +1,70 @@
+/* 3.0 Header Section */
+.header {
+    background: transparent;
+    padding: 20px;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+    z-index: 99999999;
+}
+header .logo a { 
+    font-size: 30px;
+    color: var(--dark-color);
+}
+header .logo a span { color: var(--main-color); }
+header nav { 
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 0;
+    width: 6%;
+    background:var(--main-color);
+    padding: 60px 30px; 
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s , visibility .5s , height .5s , width .5s;
+}
+header .nav-icon {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    color: var(--dark-color);
+    cursor: pointer;
+    z-index: 9999999999;
+}
+nav ul li  { padding: 10px 0px 10px 0;}
+nav ul a {
+    color: var(--dark-color);
+    transition: opacity .5s;
+}
+nav ul a:hover { opacity: .4; }
+.nav-show {
+    height: 100%;
+    width: 30%;
+    opacity: 1;
+    visibility: visible;
+}
+/* Large devices (laptops/desktops, 992px and up) */
+
+/* @media only screen and (max-width: 992px) {
+    nav ul.row { 
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100vh;
+        background: #000000fa;
+        padding: 30px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .5s , visibility .5s;
+    }
+    nav ul li { display: block; }
+    nav ul li > a { color: var(--white-color) !important; }
+    nav ul li > a:hover { color: var(--main-color) !important; }
+    .nav-icon {
+        display: block;
+        text-align: right;
+        position: relative;
+        z-index: 9999; 
+    }
+} */

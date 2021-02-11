@@ -1,0 +1,23 @@
+/* Intro */
+.intro {
+    height: 90vh;
+    padding: 50px 0 30px;
+    background: var(--dark-color);
+}
+.intro-info {
+    padding-right: 95px;
+}
+.intro-info .title {
+    font-size: 70px;
+}
+.intro-info .title span { color: var(--main-color);}
+.intro-info .text {
+    line-height: 1.6;
+    letter-spacing: 1;
+    color: var(--white-color);
+    margin-bottom: 30px;
+}
+.intro-info .btn:last-of-type { 
+    background: var(--slateblue);
+    border-color: var(--slateblue);
+}

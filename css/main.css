@@ -1,0 +1,107 @@
+/* 
+  1- Common Style 
+  2- General Style
+  3- Sections Styles
+    3.0 Header Section
+    3.1 Home Section
+    3.2 About Us Section
+    3.3 Services Section
+    3.4 Choose Us Section 
+    3.5 Portfolio Section
+    3.6 Testimonials Section
+    3.7 Team Section
+    3.8 Clients Section
+    3.9 Contact Us Section
+    3.10 Footer Section
+    3.11
+    3.12
+  */
+/* 1- Common Style */
+   /* 
+     - container
+     - .d-flex
+     - row
+     - space-between
+     - btn
+     - flex-1
+     - section-title
+   */
+.container {
+    width: 85%;
+    margin: auto;
+}
+.d-flex {
+    display: flex;
+}
+.row { display: flex; }
+.space-between { justify-content: space-between; }
+.flex-1 { flex: 1;}
+.btn {
+    padding: 15px 45px;
+    border-radius: 25px;
+    border: solid 2px var(--main-color);
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    outline: 0;
+}
+.flex-1 { flex: 1;}
+.section-title {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 45px;
+}
+
+/* 2- General Style */
+:root {
+    --main-color:#fc0254;
+    --dark-color: #0a183d;
+    --white-color: #fff;
+    --slateblue: #383b70;
+    /* 
+    --dim-gray:#556877; */
+}
+body { font-family: "Open Sans", sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-family: "Montserrat", sans-serif;}
+ul { list-style: none;}
+a { text-decoration: none;}
+
+/* Settings Box */
+.settings-box {
+    position: fixed;
+    top: 0;
+    left: -27%;
+    width: 25%;
+    height: 100%;
+    background: var(--white-color);
+    padding: 30px 0 30px 30px;
+    transition: left .5s;
+}
+.settings-box .box-icon {
+    position: absolute;
+    top: 30%;
+    right: -46px;
+    background: var(--white-color);
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+}
+.settings-box .box-icon i { cursor: pointer }
+.box-show { left: 0; }
+.settings-box .item-title {
+  color: #666;
+}
+.colors-list { padding-right: 50px;}
+.colors-list li {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+} 
+.colors-list li:first-of-type { background: #fc0254;}
+.colors-list li:nth-of-type(2) { background: #2196F3;}
+.colors-list li:nth-of-type(3) { background: #F9A826;}
+.colors-list li:nth-of-type(4) { background: #CDDC39;}
+.colors-list li:nth-of-type(5) { background: #9C27B0;}
+.colors-list li:last-of-type { background: #00BFA6;}
+
+.color-active { opacity: .5; border: solid 3px #d0cccc; }

@@ -1,0 +1,18 @@
+/*  3.2 About Us Section */
+.about .row { }
+.about-img  {
+   
+}
+.about-img img {
+    max-width: 100%;
+}
+.about-info { padding: 0 30px; }
+.about-info .about-title { 
+    font-size: 35px;
+    color: var(--dark-color);
+}
+.about-info .about-desc {
+    line-height: 1.7;
+    letter-spacing: .5px;
+    color: var(--slateblue);
+}
